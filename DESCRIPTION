@@ -14,3 +14,4 @@ Depends:
     shiny
 Suggests:
     smoof
+RoxygenNote: 6.0.1
