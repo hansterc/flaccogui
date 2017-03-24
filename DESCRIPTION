@@ -1,0 +1,16 @@
+Package: flaccogui
+Type: Package
+Title: Build a GUI for flacco with Shiny
+Version: 0.1.0
+Authors@R: person("Christian", "Hanster", email = "c_hans08@uni-muenster.de",
+  role = c("aut", "cre"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: flaccogui provide shiny GUI components for the use of flacco library
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends:
+    flacco,
+    shiny
+Suggests:
+    smoof
