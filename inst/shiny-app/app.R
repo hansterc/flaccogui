@@ -19,7 +19,7 @@ library(shape)
 library(testthat)
 library(lhs)
 
-ui <- navbarPage("flaccoGUI",
+ui <- navbarPage("flaccoGUI",theme = "flacco.css",
   tabPanel("Single Function Analysis",
    sidebarLayout(
      featureObject_sidebar("feature_function"),

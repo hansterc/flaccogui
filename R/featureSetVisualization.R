@@ -37,13 +37,14 @@ FeatureSetVisualizationComponent <- function(id) {
 #'
 FeatureSetVisualization <- function(input, output, session, stringsAsFactors, feat.object) {
   ns <- session$ns #in modules use module's namespace for UI components
-  output$visualization_select_output <- renderUI(
+  output$visualization_select_output <- renderUI({
+    userSelection <- input$visualization_method #retrieve selected value so that user will see same plot again when function has changed
     if (feat.object()["dim"] == 2)
     {
-      selectInput(ns("visualization_method"), label = "Visualization method", choices = c("Cell-Mapping" = 1, "Barrier-Tree 2D" = 2, "Barrier-Tree 3D" = 3, "Information Content" = 4))
+      selectInput(ns("visualization_method"), label = "Visualization method", choices = c("Cell-Mapping" = 1, "Barrier-Tree 2D" = 2, "Barrier-Tree 3D" = 3, "Information Content" = 4), selected = userSelection)
     } else {
       selectInput(ns("visualization_method"), label = "Visualization method", choices = c("Information Content" = 4))
-    }
+    }}
   )
   output$visualization_plotOutput <- renderPlot({
     if (input$visualization_method == 1)
