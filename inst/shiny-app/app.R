@@ -17,6 +17,7 @@ library(parallelMap)
 library(rpart)
 library(shape)
 library(testthat)
+library(lhs)
 
 ui <- navbarPage("flaccoGUI",
   tabPanel("Single Function Analysis",
