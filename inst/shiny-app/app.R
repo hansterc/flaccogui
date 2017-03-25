@@ -1,7 +1,7 @@
 library(flacco)
 library(shiny)
 library(smoof)
-
+library(flaccogui)
 
 ui <- navbarPage("flaccoGUI",
   tabPanel("Single Function Analysis",

@@ -1,6 +1,5 @@
 library(flacco)
 library(shiny)
-library(smoof)
 `%then%` <- shiny:::`%OR%`
 
 

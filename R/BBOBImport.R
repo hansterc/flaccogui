@@ -1,6 +1,5 @@
 library(flacco)
 library(shiny)
-library(smoof)
 `%then%` <- shiny:::`%OR%`
 
 
@@ -61,7 +60,10 @@ BBOBImport <- function(input, output, session, stringsAsFactors) {
 
   #function for controlling the file input app
   BBOB_import_createFeatures <- reactive({
-
+    if (!requireNamespace("smoof", quietly = TRUE)) {
+      stop("smoof needed for this function to work. Please install it.",
+           call. = FALSE)
+    }
     features<-data.frame()
     importdata=read.csv(input$BBOB_import_file$datapath,sep = ",",header=TRUE) #load values from uploaded file
     # calculate features for all rows of input file
