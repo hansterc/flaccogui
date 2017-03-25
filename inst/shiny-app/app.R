@@ -1,7 +1,22 @@
-library(flacco)
 library(shiny)
 library(smoof)
 library(flaccogui)
+#dependencies for shinyapps.io follow
+library(expm)
+library(RANN)
+library(plyr)
+library(numDeriv)
+library(e1071)
+library(mda)
+library(expm)
+library(MASS)
+library(Matrix)
+library(mlbench)
+library(parallel)
+library(parallelMap)
+library(rpart)
+library(shape)
+library(testthat)
 
 ui <- navbarPage("flaccoGUI",
   tabPanel("Single Function Analysis",
