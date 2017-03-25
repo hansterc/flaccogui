@@ -11,7 +11,7 @@ Encoding: UTF-8
 LazyData: true
 Depends:
     flacco,
-    shiny
-Suggests:
+    shiny,
     smoof
+Suggests:
 RoxygenNote: 6.0.1
