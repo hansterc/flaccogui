@@ -1,0 +1,10 @@
+name: flaccogui
+title:
+account: flaccogui
+server: shinyapps.io
+appId: 166734
+bundleId: 798115
+url: https://flaccogui.shinyapps.io/flaccogui/
+when: 1492767683.63657
+asMultiple: FALSE
+asStatic: FALSE
